@@ -70,6 +70,12 @@ hr {
     transition: .5s ease !important;
 }
 
+header.sticky .navigation a.resume {
+    color: crimson;
+    background: #fff;
+    border: #fff;
+}
+
 header.sticky .navigation a hr {
     border: 0px solid #fff;
     position: absolute;
@@ -99,6 +105,12 @@ header .navigation a:hover hr {
 
 header .navigation a:hover {
     color: #bee;
+}
+
+header .navigation a.resume {
+    border: 1px solid crimson;
+    padding: 0px 10px;
+    border-radius: 50px;
 }
 
 section {
@@ -672,6 +684,17 @@ i {
 @media (max-width: 1040px) {
     header {
         padding: 12px 20px;
+    }
+    header .navigation hr {
+        display: none !important;
+    }
+    header .navigation a.resume {
+        border: none;
+        color: black !important;
+        padding: 0 20px;
+    }
+    header .navigation a.resume:hover {
+        color: white !important;
     }
     header.sticky {
         background: crimson;

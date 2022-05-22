@@ -46,9 +46,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 function hideLoader() {
-    document.getElementById('Loading').style.display = 'none';
+    setTimeout(function () {
+        document.getElementById('Loading').style.display = 'none';
+    }, 2000);
 }
-    
+
     // jQuery version of hideLoader()
 
 // $(window).on('load', function(){
